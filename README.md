@@ -25,12 +25,16 @@ In this project, with my knowledge of machine learning and neural networks, I us
 - Were you able to achieve the target model performance?
   - Unfortunately, the model was not able to achieve the target model performance (>75%). The result for my first try is a **72.57% accuracy score**.
   
+  ![FirstTry](Resources/StandardResult.png)
+  
 - What steps did you take to try and increase model performance?
   - Second try: changed the "Other" bucket threshold for the **APPLCIATION_TYPE** column from 500 to 200.
   - Third try: changed the "Other" bucket threshold for the **CLASSIFICATION** column from 1800 to 500.
   - Fourth try: added a third hidden node layer with 80 neurons and "Relu" activation function. Also, increased the neurons for the first and second hidden layers to 130 and 100, respectively.
   - However, even with all of these changes, my accuracy score could not increase. In fact, it even lower my accuracy score to **72.45%**
-
+  
+  ![OptimizationModel](Resources/OptimizedResult.png)
+  
 ## Summary
 
 In conclusion, both of the two models could not meet the target model performance.  With that said, I would recommend choosing the first model since it yielded better results and executed much faster than the second model (optimization model). 
